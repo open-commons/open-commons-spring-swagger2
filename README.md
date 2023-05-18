@@ -22,6 +22,6 @@ maven (**[Go to LATEST](http://nexus3.ymtech.co.kr/#browse/browse:maven-public:o
 <dependency>
   <groupId>open.commons</groupId>
   <artifactId>open-commons-spring-web-swagger</artifactId>
-  <version>${open-commons-spring-jdbc.version}</version>
+  <version>${open-commons-spring-web-swagger.version}</version>
 </dependency>
 ```
