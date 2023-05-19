@@ -1,6 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>open-commons</groupId>
+	<groupId>open.commons</groupId>
 	<artifactId>open-commons-spring-swagger2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Open Commons for Swagger2 </name>
@@ -34,6 +34,7 @@
 		<spring-core.version>[5.3.23]</spring-core.version>
 		<spring-boot.version>2.5.3</spring-boot.version>
 		<slf4j-api.version>1.7.32</slf4j-api.version>
+		<servlet-api.version>2.5</servlet-api.version>
 
 		<open-commons-core.version>2.0.0-SNAPSHOT</open-commons-core.version>
 		<!-- <<< end: dependencies -->
@@ -151,6 +152,17 @@
 		<!-- ********************** -->
 
 		<!-- ************** -->
+		<!-- begin: servlet -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>${servlet-api.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- end: servlet -->
+		<!-- ************** -->
+
+		<!-- ************** -->
 		<!-- begin: open.commons -->
 		<dependency>
 			<groupId>open.commons</groupId>
@@ -175,6 +187,8 @@
 		</dependency>
 		<!-- end: swagger - API Automation -->
 		<!-- ************** -->
+
+
 	</dependencies>
 
 
