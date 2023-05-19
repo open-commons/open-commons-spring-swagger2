@@ -1,5 +1,5 @@
-# open-commons-spring-web-swagger
-Open Commons for Swagger on Springframework
+# open-commons-spring-swagger2
+Open Commons for Swagger2 on Springframework.
 
 # History
 See [history.md](./history.md).
