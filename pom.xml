@@ -1,10 +1,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>open.commons</groupId>
+	<parent>
+		<groupId>io.github.open-commons</groupId>
+		<artifactId>open-commons-spring-web-dependencies</artifactId>
+		<version>0.8.0-SNAPSHOT</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
 	<artifactId>open-commons-spring-swagger2</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.1.0-SNAPSHOT</version>
 	<name>Open Commons for Swagger2 </name>
 	<description>Open Commons for Swagger2 on Springframework</description>
+	<url>https://github.com/open-commons/open-commons-spring-swagger2</url>
 
 	<licenses>
 		<license>
@@ -13,11 +19,23 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
+	
+	<scm>
+		<connection>scm:git:https://github.com/open-commons/open-commons-spring-swagger2.git</connection>
+		<developerConnection>scm:git:https://github.com/open-commons/open-commons-spring-swagger2.git</developerConnection>
+		<url>https://github.com/open-commons/open-commons-spring-swagger2</url>
+	</scm>
+
+	<developers>
+		<developer>
+			<name>Park, Jun-Hong</name>
+			<email>parkjunhong77@gmail.com</email>
+			<organization>https://github.com/open-commons</organization>
+			<organizationUrl>https://github.com/open-commons</organizationUrl>
+		</developer>
+	</developers>
 
 	<properties>
-		<!-- >>> begin: plugin dependencies -->
-		<build.finalName>open-commons-spring-swagger2-${project.version}</build.finalName>
-
 		<encoding>UTF-8</encoding>
 		<java.version>1.8</java.version>
 
@@ -25,29 +43,24 @@
 		<compile.source.version>1.8</compile.source.version>
 		<compile.target.version>1.8</compile.target.version>
 
-		<maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
-		<maven-source-plugin.version>2.2.1</maven-source-plugin.version>
-		<maven-javadoc-plugin.version>3.0.1</maven-javadoc-plugin.version>
-		<!-- >>> end: plugin dependencies -->
-
 		<!-- >>> begin: dependencies -->
-		<spring-core.version>[5.3.23]</spring-core.version>
-		<spring-boot.version>2.5.3</spring-boot.version>
-		<slf4j-api.version>1.7.32</slf4j-api.version>
-		<servlet-api.version>2.5</servlet-api.version>
-
-		<open-commons-core.version>2.0.0-SNAPSHOT</open-commons-core.version>
+		<org.springframework-version>5.3.19</org.springframework-version>
+		<spring-data-redis.version>2.6.4</spring-data-redis.version>
+		<commons-io.version>2.5</commons-io.version>
 		<!-- <<< end: dependencies -->
+		
+		<!-- >>> begin: plugin dependencies -->
+		<build.finalName>open-commons-spring-swagger2-${project.version}</build.finalName>
+		<!-- >>> end: plugin dependencies -->
 	</properties>
 
 	<distributionManagement>
 		<repository>
-			<id>releases</id>
-			<name>Release Repository</name>
-			<url>https://nexus3.ymtech.co.kr/repository/maven-releases/</url>
+			<id>maven-central</id>
+			<url>https://central.sonatype.com</url>
 		</repository>
 		<snapshotRepository>
-			<id>snapshots</id>
+			<id>ymtech-maven-repo</id>
 			<name>Snapshot Repository</name>
 			<url>https://nexus3.ymtech.co.kr/repository/maven-snapshots/</url>
 		</snapshotRepository>
@@ -88,12 +101,10 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
-			<version>${spring-core.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>${spring-core.version}</version>
 		</dependency>
 		<!-- end: spring-framework -->
 		<!-- ********************** -->
@@ -104,17 +115,14 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot</artifactId>
-			<version>${spring-boot.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-configuration-processor</artifactId>
-			<version>${spring-boot.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
-			<version>${spring-boot.version}</version>
 		</dependency>
 		<!-- end: spring boot -->
 		<!-- ********************** -->
@@ -125,7 +133,6 @@
 		<dependency>
 			<groupId>javax.validation</groupId>
 			<artifactId>validation-api</artifactId>
-			<version>2.0.1.Final</version>
 		</dependency>
 		<!-- end: validation -->
 		<!-- ************** -->
@@ -136,7 +143,6 @@
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
-			<version>${slf4j-api.version}</version>
 		</dependency>
 		<!-- end: slf4j -->
 		<!-- ********************** -->
@@ -146,7 +152,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
-			<version>${spring-boot.version}</version>
 		</dependency>
 		<!-- end: Spring Security -->
 		<!-- ********************** -->
@@ -155,8 +160,7 @@
 		<!-- begin: servlet -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-			<version>${servlet-api.version}</version>
+			<artifactId>javax.servlet-api</artifactId>
 			<scope>provided</scope>
 		</dependency>
 		<!-- end: servlet -->
@@ -213,7 +217,6 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>${maven-compiler-plugin.version}</version>
 				<configuration>
 					<encoding>${compile.encoding}</encoding>
 					<source>${compile.source.version}</source>
@@ -225,7 +228,6 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
-				<version>${maven-source-plugin.version}</version>
 				<configuration>
 					<encoding>UTF-8</encoding>
 				</configuration>
@@ -243,7 +245,6 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>${maven-javadoc-plugin.version}</version>
 				<configuration>
 					<goal>deploy</goal>
 					<show>private</show>
@@ -265,11 +266,33 @@
 				</executions>
 			</plugin>
 			<!-- <<< end: javadoc -->
+			<!-- Maven Central Deployment plugin -->
+			<plugin>
+				<groupId>org.sonatype.central</groupId>
+				<artifactId>central-publishing-maven-plugin</artifactId>
+				<version>0.7.0</version>
+				<extensions>true</extensions>
+				<configuration>
+					<publishingServerId>maven-central</publishingServerId>
+					<!-- autoPublish>true</autoPublish>
+             		<waitUntil>published</waitUntil -->
+				</configuration>
+			</plugin>
+			<!-- GPG signature plugin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-gpg-plugin</artifactId>
+				<version>1.5</version>
+				<executions>
+					<execution>
+						<id>sign-artifacts</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>sign</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
-
-	<scm>
-		<url>https://github.com/parkjunhong/open-commons-spring-web</url>
-		<developerConnection>parkjunhong77@gmail.com</developerConnection>
-	</scm>
 </project>
