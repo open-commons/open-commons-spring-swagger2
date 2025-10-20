@@ -69,7 +69,7 @@ public class SwaggerApiInfo {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2023. 5. 19.		박준홍			최초 작성
+     * 2023. 5. 19.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      *
@@ -87,7 +87,7 @@ public class SwaggerApiInfo {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2023. 5. 19.		박준홍			최초 작성
+     * 2023. 5. 19.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      * 
      * @return the contactName
@@ -110,7 +110,7 @@ public class SwaggerApiInfo {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2023. 5. 19.		박준홍			최초 작성
+     * 2023. 5. 19.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      * 
      * @return the description
@@ -133,7 +133,7 @@ public class SwaggerApiInfo {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2023. 5. 19.		박준홍			최초 작성
+     * 2023. 5. 19.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      * 
      * @return the license
@@ -156,7 +156,7 @@ public class SwaggerApiInfo {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2023. 5. 19.		박준홍			최초 작성
+     * 2023. 5. 19.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      * 
      * @return the licenseUrl
@@ -179,7 +179,7 @@ public class SwaggerApiInfo {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2023. 5. 19.		박준홍			최초 작성
+     * 2023. 5. 19.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      * 
      * @return the termsOfServiceUrl
@@ -202,7 +202,7 @@ public class SwaggerApiInfo {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2023. 5. 19.		박준홍			최초 작성
+     * 2023. 5. 19.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      * 
      * @return the title
@@ -225,7 +225,7 @@ public class SwaggerApiInfo {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2023. 5. 19.		박준홍			최초 작성
+     * 2023. 5. 19.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      * 
      * @return the version
@@ -248,7 +248,7 @@ public class SwaggerApiInfo {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2023. 5. 19.		박준홍			최초 작성
+     * 2023. 5. 19.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      * @param contactName
@@ -271,7 +271,7 @@ public class SwaggerApiInfo {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2023. 5. 19.		박준홍			최초 작성
+     * 2023. 5. 19.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      * @param description
@@ -294,7 +294,7 @@ public class SwaggerApiInfo {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2023. 5. 19.		박준홍			최초 작성
+     * 2023. 5. 19.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      * @param license
@@ -317,7 +317,7 @@ public class SwaggerApiInfo {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2023. 5. 19.		박준홍			최초 작성
+     * 2023. 5. 19.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      * @param licenseUrl
@@ -340,7 +340,7 @@ public class SwaggerApiInfo {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2023. 5. 19.		박준홍			최초 작성
+     * 2023. 5. 19.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      * @param termsOfServiceUrl
@@ -363,7 +363,7 @@ public class SwaggerApiInfo {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2023. 5. 19.		박준홍			최초 작성
+     * 2023. 5. 19.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      * @param title
@@ -386,7 +386,7 @@ public class SwaggerApiInfo {
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2023. 5. 19.		박준홍			최초 작성
+     * 2023. 5. 19.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      * @param version

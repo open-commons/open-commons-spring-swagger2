@@ -47,7 +47,7 @@ public class SpringfoxSwaggerWebSecurityCofigurer extends WebSecurityConfigurerA
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2023. 5. 19.		박준홍			최초 작성
+     * 2023. 5. 19.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      *
@@ -65,7 +65,7 @@ public class SpringfoxSwaggerWebSecurityCofigurer extends WebSecurityConfigurerA
      * [개정이력]
      *      날짜    	| 작성자	|	내용
      * ------------------------------------------
-     * 2023. 5. 19.		박준홍			최초 작성
+     * 2023. 5. 19.		parkjunhong77@gmail.com			최초 작성
      * </pre>
      *
      * @param disableDefaults
